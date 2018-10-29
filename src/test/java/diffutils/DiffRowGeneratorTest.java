@@ -93,7 +93,7 @@ public class DiffRowGeneratorTest  extends TestCase {
         print(rows);
 
         assertEquals(3, rows.size());
-        assertTrue(rows.get(0).getOldLine().indexOf("<span") > 0);
+        assertTrue(((String)rows.get(0).getOldLine()).indexOf("<span") > 0);
     }
 
     public void testGenerator_IgnoreWhitespaces() {
