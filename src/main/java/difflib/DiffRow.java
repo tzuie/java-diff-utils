@@ -63,12 +63,12 @@ package difflib;
  * 
  * @author <a href="dm.naumenko@gmail.com">Dmitry Naumenko</a>
  */
-public class DiffRow {
+public class DiffRow<T> {
     private Tag tag;
-    private String oldLine;
-    private String newLine;
+    private T oldLine;
+    private T newLine;
     
-    public DiffRow(Tag tag, String oldLine, String newLine) {
+    public DiffRow(Tag tag, T oldLine, T newLine) {
         this.tag = tag;
         this.oldLine = oldLine;
         this.newLine = newLine;
@@ -95,28 +95,28 @@ public class DiffRow {
     /**
      * @return the oldLine
      */
-    public String getOldLine() {
+    public T getOldLine() {
         return oldLine;
     }
     
     /**
      * @param oldLine the oldLine to set
      */
-    public void setOldLine(String oldLine) {
+    public void setOldLine(T oldLine) {
         this.oldLine = oldLine;
     }
     
     /**
      * @return the newLine
      */
-    public String getNewLine() {
+    public T getNewLine() {
         return newLine;
     }
     
     /**
      * @param newLine the newLine to set
      */
-    public void setNewLine(String newLine) {
+    public void setNewLine(T newLine) {
         this.newLine = newLine;
     }
     
